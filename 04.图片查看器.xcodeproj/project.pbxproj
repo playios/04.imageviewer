@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		894FE9D11AC7A9C300FDFB26 /* ImageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 894FE9D01AC7A9C300FDFB26 /* ImageList.plist */; };
 		896133571AC6D8160047C9D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896133561AC6D8160047C9D6 /* Foundation.framework */; };
 		896133591AC6D8160047C9D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896133581AC6D8160047C9D6 /* CoreGraphics.framework */; };
 		8961335B1AC6D8160047C9D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8961335A1AC6D8160047C9D6 /* UIKit.framework */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		894FE9D01AC7A9C300FDFB26 /* ImageList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageList.plist; sourceTree = "<group>"; };
 		896133531AC6D8160047C9D6 /* 04.图片查看器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "04.图片查看器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		896133561AC6D8160047C9D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		896133581AC6D8160047C9D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +114,7 @@
 		8961335C1AC6D8160047C9D6 /* 04.图片查看器 */ = {
 			isa = PBXGroup;
 			children = (
+				894FE9D01AC7A9C300FDFB26 /* ImageList.plist */,
 				896133651AC6D8160047C9D6 /* DYAppDelegate.h */,
 				896133661AC6D8160047C9D6 /* DYAppDelegate.m */,
 				896133681AC6D8160047C9D6 /* Main.storyboard */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894FE9D11AC7A9C300FDFB26 /* ImageList.plist in Resources */,
 				8961336F1AC6D8160047C9D6 /* Images.xcassets in Resources */,
 				896133611AC6D8160047C9D6 /* InfoPlist.strings in Resources */,
 				8961336A1AC6D8160047C9D6 /* Main.storyboard in Resources */,
@@ -457,6 +461,7 @@
 				896133871AC6D8160047C9D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		896133881AC6D8160047C9D6 /* Build configuration list for PBXNativeTarget "04.图片查看器Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +470,7 @@
 				8961338A1AC6D8160047C9D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
