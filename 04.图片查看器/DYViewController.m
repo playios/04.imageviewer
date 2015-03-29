@@ -49,8 +49,8 @@
 -(UIButton *)leftButton{
     if (_leftButton==nil) {
         _leftButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
-        CGFloat centerX=self.iconview.center.x*0.5;
-        CGFloat centerY=self.iconview.frame.origin.y;
+        CGFloat centerX=self.iconview.frame.origin.x*0.5;
+        CGFloat centerY=self.iconview.center.y;
         _leftButton.center=CGPointMake(centerX, centerY);
         [_leftButton setBackgroundImage:[UIImage imageNamed:@"left_normal"] forState:UIControlStateNormal];
           [_leftButton setBackgroundImage:[UIImage imageNamed:@"left_highlighted"] forState:UIControlStateHighlighted];
@@ -64,8 +64,8 @@
 -(UIButton *)rightButton{
     if (_rightButton==nil) {
         _rightButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
-        CGFloat centerX=(self.view.center.x-self.iconview.center.x)*0.5;
-        CGFloat centerY=self.iconview.frame.origin  .y;
+        CGFloat centerX=self.view.frame.size.width-self.iconview.frame.origin.x*0.5;
+        CGFloat centerY=self.iconview.center   .y;
         _rightButton.center=CGPointMake(centerX, centerY);
         [_rightButton setBackgroundImage:[UIImage imageNamed:@"right_normal"] forState:UIControlStateNormal];
         [_rightButton setBackgroundImage:[UIImage imageNamed:@"right_highlighted"] forState:UIControlStateHighlighted];
@@ -79,7 +79,7 @@
 -(UILabel *)desclable{
     if(_desclable==nil  ){
         CGFloat descY=CGRectGetMaxY(self.iconview.frame);
-        _desclable=[[UILabel alloc]initWithFrame:CGRectMake(0, descY, self.view.bounds.size.width, 300)];
+        _desclable=[[UILabel alloc]initWithFrame:CGRectMake(0, descY, self.view.bounds.size.width, 100)];
         _desclable.textAlignment=NSTextAlignmentCenter;
         _desclable.numberOfLines=0;
         [self.view addSubview:_desclable];
